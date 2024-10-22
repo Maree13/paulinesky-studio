@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Aboutme from './pages/Aboutme';
+import Gallery from './pages/Gallery';
+import Contact from './pages/Contact';
+import Error from './pages/Error';
+import SharedLayout from './pages/SharedLayout';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<SharedLayout />}>
+          <Route path="/" element={<Aboutme />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Error />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
+
+// komponenta má stejný název jako je název souboru
+// komponenta obsahuje return
+// v return musí něco být
+// na konci souboru musí být řádek s exportem

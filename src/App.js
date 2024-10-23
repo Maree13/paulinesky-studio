@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Aboutme from './pages/Aboutme';
-import Gallery from './pages/Gallery';
+import Intro from './pages/Intro';
 import Contact from './pages/Contact';
 import Error from './pages/Error';
 import SharedLayout from './pages/SharedLayout';
@@ -10,8 +10,8 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route element={<SharedLayout />}>
-          <Route path="/" element={<Aboutme />} />
-          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/" element={<Intro />} />
+          <Route path="/aboutme" element={<Aboutme />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Error />} />
         </Route>

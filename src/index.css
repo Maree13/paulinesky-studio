@@ -1,1 +1,46 @@
+* {
+  box-sizing: border-box;
+}
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* COLORS */
+
+:root {}
+
+
+/* FONTS */
+
+/* NAVBAR */
+
+/* NAVBAR HAMBURGER MENU _ BIG SCREENS */
+
+.hamburger {
+  display: none;
+}
+
+/* NAVBAR HAMBURGER MENU _ Responsive - MOBILE */
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .navbar-navigation {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .navbar-navigation.open {
+    display: flex;
+    flex-direction: column;
+  }
+
+}

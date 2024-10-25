@@ -15,17 +15,19 @@ const Navbar = () => {
       </button>
 
       <nav className={`navbar-navigation ${isOpen ? 'open' : ''}`}>
-        <Link className="menu-link" id="menu-link-01" to="/">
-          Intro
-        </Link>
-        <br />
-        <Link className="menu-link" id="menu-link-02" to="/aboutme">
-          O mně
-        </Link>
-        <br />
-        <Link className="menu-link" id="menu-link-03" to="/contact">
-          Contact
-        </Link>
+        <div className="navbar-link-container">
+          <Link className="menu-link" id="menu-link-01" to="/">
+            Intro
+          </Link>
+          <br />
+          <Link className="menu-link" id="menu-link-02" to="/aboutme">
+            O mně
+          </Link>
+          <br />
+          <Link className="menu-link" id="menu-link-03" to="/contact">
+            Contact
+          </Link>
+        </div>
         <SocialMediaLinks />
       </nav>
     </header>

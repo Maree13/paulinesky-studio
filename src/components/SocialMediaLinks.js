@@ -5,7 +5,7 @@ const SocialMediaLinks = () => {
     <div className="social-media-links">
       <a
         className="social-media-icon"
-        href="https://www.facebook.com/MVisagemichaelakantorova"
+        href="https://www.facebook.com/profile.php?id=100086484022698"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -13,7 +13,7 @@ const SocialMediaLinks = () => {
       </a>
       <a
         className="social-media-icon"
-        href="https://www.instagram.com/mvisage_michaelakantorova/"
+        href="https://www.instagram.com/paulinesky_studio/"
         target="_blank"
         rel="noopener noreferrer"
       >

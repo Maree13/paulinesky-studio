@@ -8,16 +8,17 @@ body {
   padding: 0;
   height: 100%;
   color: var(--color-1);
+  font-family: "Roboto Mono", monospace;
 }
 
 /* COLORS */
 
 :root {
   /* BACKGROUND COLORS PAGES */
-  --background-1: #c6a9b6;
-  /* rose quartz */
-  --background-2: #B7C2CD;
-  /* french gray */
+  --background-1: #EFE7E6;
+  /* pouzita - isabelline */
+  --background-2: #E7EBEE;
+  /* pouzita - antiflash white*/
   --background-3: #B0B4BF;
   /* french gray 2 */
   --background-4: #C2AEB0;
@@ -41,7 +42,7 @@ body {
   /* jet */
   --background-footer-2: #474747;
   /* outer space */
-  --background-header-1: #F7F3F4;
+  --background-header-1: #F4F4F6;
   /* snow */
   --background-header-2: #E7DADD;
   /* levander-blush */
@@ -52,11 +53,17 @@ body {
   /* jet */
   --color-2: #474747;
   /* outer space */
-
+  --color-3: #F4F4F6;
+  /* snow */
 }
 
 
 /* FONTS */
+
+h1 {
+  font-family: "Reenie Beanie", cursive;
+  font-size: 2.7rem;
+}
 
 /* NAVBAR */
 
@@ -73,27 +80,32 @@ body {
   padding: 30px;
   background-color: var(--background-header-1);
   height: 150px;
+  font-size: 1.3rem;
 }
 
 .navbar-link-container {
   display: flex;
   justify-content: space-evenly;
-  flex-grow: 2;
-
+  width: 60%;
+  /* flex-grow: 2; */
 }
 
 .menu-link {
   color: var(--color-1);
   text-decoration: none;
+  text-transform: uppercase;
 }
+
+#menu-link-01 {}
 
 /* SOCIAL MEDIA ICONS */
 
 .social-media-links {
   display: flex;
   flex-direction: row;
+  width: 40%;
   justify-content: space-evenly;
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 
 .social-media-icon {
@@ -107,10 +119,11 @@ body {
   .hamburger {
     display: flex;
     cursor: pointer;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     z-index: 1;
     background: none;
     border: 0;
+    color: var(--color-1);
   }
 
   .navbar-navigation {
@@ -124,4 +137,46 @@ body {
     flex-direction: column;
   }
 
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: var(--background-footer-1);
+  width: 100%;
+  height: 100px;
+  color: var(--background-header-1);
+}
+
+.footer p {
+  margin: 0;
+}
+
+
+/* ABOUT ME */
+
+.aboutme {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--background-2);
+  height: 100vh - 250px;
+}
+
+.aboutme-text {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-grow: 2;
+}
+
+.aboutme-background-image {
+  width: 100%;
+  background-image: url('./imgomne/img-omne-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-grow: 1;
 }

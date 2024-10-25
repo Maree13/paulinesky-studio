@@ -159,7 +159,7 @@ h1 {
   display: flex;
   flex-direction: row;
   background-color: var(--background-2);
-  height: 100vh - 250px;
+  height: 100vh;
 }
 
 .aboutme-text {
@@ -174,7 +174,7 @@ h1 {
 
 .aboutme-background-image {
   width: 100%;
-  background-image: url('./imgomne/img-omne-1.jpg');
+  background-image: url('./imgomne/img-omne-2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

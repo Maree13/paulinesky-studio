@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa'; // Importing icons
 import { useState } from 'react';
+import SocialMediaLinks from './SocialMediaLinks';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // Initialize state
@@ -14,11 +15,18 @@ const Navbar = () => {
       </button>
 
       <nav className={`navbar-navigation ${isOpen ? 'open' : ''}`}>
-        <Link to="/">Intro</Link>
+        <Link className="menu-link" id="menu-link-01" to="/">
+          Intro
+        </Link>
         <br />
-        <Link to="/aboutme">O mně</Link>
+        <Link className="menu-link" id="menu-link-02" to="/aboutme">
+          O mně
+        </Link>
         <br />
-        <Link to="/contact">Contact</Link>
+        <Link className="menu-link" id="menu-link-03" to="/contact">
+          Contact
+        </Link>
+        <SocialMediaLinks />
       </nav>
     </header>
   );

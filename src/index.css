@@ -11,7 +11,39 @@ body {
 
 /* COLORS */
 
-:root {}
+:root {
+  /* BACKGROUND COLORS PAGES */
+  --background-1: #c6a9b6;
+  /* rose quartz */
+  --background-2: #B7C2CD;
+  /* french gray */
+  --background-3: #B0B4BF;
+  /* french gray 2 */
+  --background-4: #C2AEB0;
+  /* rose quartz 2 */
+  --background-5: #D8C3C0;
+  /* pale dogwood */
+  --background-6: #F1A793;
+  /* melon */
+  --background-7: #EAA29A;
+  /* melon 2 */
+  --background-8: #D5D19A;
+  /* vanilla */
+  --background-9: #D1C7C9;
+  /* silver */
+  --background-10: #B3C6D0;
+  /* columbia blue */
+
+  /* BACKGROUND COLORS HEADER AND FOOTER */
+
+  --background-footer-1: #292929;
+  /* jet */
+  --background-header-1: #F7F3F4;
+  /* snow */
+  --background-header-2: #E7DADD;
+  /* levander-blush */
+
+}
 
 
 /* FONTS */
@@ -24,12 +56,21 @@ body {
   display: none;
 }
 
+.navbar-navigation {
+  background-color: var(--background-header-1);
+  height: 150px;
+}
+
 /* NAVBAR HAMBURGER MENU _ Responsive - MOBILE */
 
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
     cursor: pointer;
+    font-size: 2.5rem;
+    z-index: 1;
+    background: none;
+    border: 0;
   }
 
   .navbar-navigation {

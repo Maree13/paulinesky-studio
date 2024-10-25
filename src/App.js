@@ -4,6 +4,7 @@ import Intro from './pages/Intro';
 import Contact from './pages/Contact';
 import Error from './pages/Error';
 import SharedLayout from './pages/SharedLayout';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const App = () => {
   return (

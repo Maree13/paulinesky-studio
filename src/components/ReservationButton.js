@@ -9,7 +9,7 @@ const ReservationButton = () => {
 
   return (
     <button onClick={navigateToLink} className="button-style">
-      Book a Service
+      Rezervace
     </button>
   );
 };

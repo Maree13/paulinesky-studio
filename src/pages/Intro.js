@@ -10,7 +10,9 @@ const Intro = () => {
 
         <ReservationButton />
       </div>
+      {/* <div className="intro-image-container"> */}
       <div className="intro-background-image"></div>
+      {/* </div> */}
     </section>
   );
 };

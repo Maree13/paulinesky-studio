@@ -119,6 +119,7 @@ h1 {
 
   header {
     background-color: var(--background-header-1);
+    padding: 70px 30px;
   }
 
   .hamburger {
@@ -197,22 +198,27 @@ h1 {
 }
 
 .aboutme-image-container {
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   /* flex-grow: 1; */
   overflow: hidden;
 }
 
 
-.aboutme-background-image {
+/* .aboutme-background-image {
 
   width: 100%;
-  /* background-image: url('./imgomne/img-omne-2.jpg'); */
+  background-image: url('./imgomne/img-omne-2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   flex-grow: 1;
+} */
+
+.aboutme-background-image {
+  width: 100%;
+  height: 100vh;
 }
 
 /* PRIDANY KOD ANIMACE */
@@ -221,6 +227,7 @@ h1 {
   position: relative;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 .slide {
@@ -233,7 +240,6 @@ h1 {
   background-position: center center;
   background-repeat: no-repeat;
   opacity: 0;
-  /* animation: fadeAnimation 30s infinite; */
 }
 
 
@@ -241,6 +247,7 @@ h1 {
   background-image: url('./imgomne/img-omne-1.jpg');
   animation: fade 55s infinite;
   animation-delay: 0s;
+  opacity: 1;
 }
 
 .slide2 {
@@ -280,3 +287,60 @@ h1 {
 
 
 /* KONEC ANIMACE */
+
+@media (max-width: 768px) {
+
+  .aboutme {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .slide {
+    height: 100%;
+  }
+}
+
+
+/* INTRO  */
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 80px;
+  flex-grow: 2;
+}
+
+
+
+.intro-background-image {
+  width: 100%;
+  background-image: url('./img/img-hero-3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-grow: 1;
+}
+
+/* BUTTON RESERVIO */
+.button-style {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-style:hover {
+  background-color: #0056b3;
+}

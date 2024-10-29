@@ -1,7 +1,16 @@
+import ReservationButton from '../components/ReservationButton';
+
 const Intro = () => {
   return (
-    <section>
-      <p>Obsah stránky Intro - uvodni stranka</p>
+    <section className="intro">
+      <div className="intro-text">
+        <h1>
+          - Kosmetické <br /> studio <br /> Paulinesky -
+        </h1>
+
+        <ReservationButton />
+      </div>
+      <div className="intro-background-image"></div>
     </section>
   );
 };

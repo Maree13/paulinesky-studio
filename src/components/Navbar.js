@@ -23,8 +23,12 @@ const Navbar = () => {
           <Link className="menu-link" id="menu-link-02" to="/aboutme">
             O mně
           </Link>
+          <br />{' '}
+          <Link className="menu-link" id="menu-link-03" to="/services">
+            Služby
+          </Link>
           <br />
-          <Link className="menu-link" id="menu-link-03" to="/contact">
+          <Link className="menu-link" id="menu-link-04" to="/contact">
             Contact
           </Link>
         </div>

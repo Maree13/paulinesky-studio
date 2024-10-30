@@ -1,4 +1,5 @@
 import '../index.css';
+import ReservationButton from '../components/ReservationButton';
 
 const Aboutme = () => {
   return (
@@ -17,6 +18,7 @@ const Aboutme = () => {
           iste voluptas, sit debitis modi iure, harum recusandae non. Neque,
           dolor nam.
         </p>
+        <ReservationButton />
       </div>
       {/* Obrázek na pozadí s dynamickou změnou */}
       <div className="aboutme-background-image">

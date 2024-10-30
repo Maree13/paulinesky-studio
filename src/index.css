@@ -380,6 +380,7 @@ h1 {
   font-family: "Roboto Mono", monospace;
   font-size: 1.1rem;
   letter-spacing: 3px;
+  margin: 70px;
 }
 
 .button-style:hover {

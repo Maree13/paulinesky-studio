@@ -29,12 +29,12 @@ body {
   /* melon */
   --background-7: #EAA29A;
   /* melon 2 */
-  --background-8: #D5D19A;
-  /* vanilla */
-  --background-9: #D1C7C9;
-  /* silver */
-  --background-10: #B3C6D0;
-  /* columbia blue */
+  --background-8: #EFE7EF;
+  /* in use */
+  --background-9: #EFE6EF;
+  /* in use */
+  --background-10: #E3DEE1;
+  /* in use */
 
   /* BACKGROUND COLORS HEADER AND FOOTER */
 
@@ -307,7 +307,7 @@ h1 {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--background-1);
 }
 
@@ -332,23 +332,38 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   flex-grow: 1;
+  opacity: 0;
+  /* Začína ako neviditeľné */
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 768px) {
   .intro {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
   }
 
   .intro-text {
     width: 100%;
-    height: 100%;
+    height: 60%;
   }
 
   .intro-background-image {
-    width: 100%;
-    height: 100%;
+    min-height: 100vh;
+    min-width: 100%;
+
   }
 }
 
@@ -356,15 +371,98 @@ h1 {
 .button-style {
   padding: 25px 45px;
   background-color: transparent;
+  /* background-color: var(--background-header-1); */
   color: var(--color-1);
-  border: solid 2.4px var(--color-1);
+  border: solid 2px var(--background-header-1);
   border-radius: 3px;
   cursor: pointer;
   text-transform: uppercase;
   font-family: "Roboto Mono", monospace;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
 }
 
 .button-style:hover {
   background-color: var(--background-header-1);
+  border-color: var(--background-header-1);
+}
+
+
+@media (max-width: 768px) {
+  .button-style {
+    padding: 20px 40px;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    margin: 70px;
+    /* border-color: var(--background-header-1); */
+  }
+
+  /* .intro-title {
+    display: none;
+  } */
+}
+
+/* SERVICES */
+
+.services {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background-10);
+}
+
+.services-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 60%;
+  padding: 80px;
+  flex-grow: 2;
+}
+
+.services-title {
+  text-align: center;
+}
+
+.services-background-image {
+  width: 40%;
+  background-image: url('./imgservices/img-services-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-grow: 1;
+  opacity: 0;
+  /* Začína ako neviditeľné */
+  animation: fadeInServices 2s ease-in-out forwards;
+}
+
+@keyframes fadeInServices {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+
+  .services-text {
+    width: 100%;
+    height: 60%;
+  }
+
+  .services-background-image {
+    min-height: 100vh;
+    min-width: 100%;
+  }
 }

@@ -5,14 +5,18 @@ import { initReactI18next } from 'react-i18next';
 // Importujte preklady
 import translationEN from './locales/en/translation.json';
 import translationCS from './locales/cs/translation.json';
+import navbarEN from './locales/en/navbar.json';
+import navbarCS from './locales/cs/navbar.json';
 
 // Definujte dostupné jazyky a preklady
 const resources = {
   en: {
     translation: translationEN,
+    navbar: navbarEN,
   },
   cs: {
     translation: translationCS,
+    navbar: navbarCS,
   },
 };
 
@@ -23,6 +27,9 @@ i18n
     resources,
     lng: 'cs', // Počiatočný jazyk
     fallbackLng: 'en', // Jazyk, ktorý sa použije, ak preklad chýba
+
+    ns: ['translation', 'navbar'], // Definujte použité namespaces
+    defaultNS: 'translation',
 
     keySeparator: false, // Používajte priamo kľúče pre preklady
 

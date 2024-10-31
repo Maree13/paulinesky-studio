@@ -116,12 +116,22 @@ h1 {
 
 /* ENGLISH  */
 
-.english {
+.language-toggle {
+  display: flex;
+  /* Flexbox na zarovnanie obsahu */
+  align-items: center;
+  /* Vertikálne zarovnanie na stred */
+  justify-content: center;
+  /* Horizontálne zarovnanie na stred */
+  width: 30px;
+  /* Nastavte požadovanú šírku */
+  height: 30px;
+  /* Rovnaká hodnota ako šírka na vytvorenie štvorca */
   margin: 50px;
   border: solid 2.48px var(--color-1);
   border-radius: 50%;
-  font-size: 0.9rem;
-  padding: 4px;
+  font-size: 0.7rem;
+  padding: 6px;
   font-weight: bolder;
   text-transform: uppercase;
   cursor: pointer;

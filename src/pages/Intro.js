@@ -5,7 +5,7 @@ const Intro = () => {
     <section className="intro">
       <div className="intro-text">
         <h1 className="intro-title">
-          - Kosmetické <br /> studio <br /> Paulinesky -
+          - Intro -{/* - Kosmetické <br /> studio <br /> Paulinesky - */}
         </h1>
 
         <ReservationButton />

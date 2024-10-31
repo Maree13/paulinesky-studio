@@ -33,6 +33,7 @@ const Navbar = () => {
           </Link>
         </div>
         <SocialMediaLinks />
+        <div className="english">En</div>
       </nav>
     </header>
   );

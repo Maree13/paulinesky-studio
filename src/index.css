@@ -63,6 +63,7 @@ body {
 h1 {
   font-family: "Reenie Beanie", cursive;
   font-size: 2.7rem;
+  /* letter-spacing: 3px; */
 }
 
 /* NAVBAR */
@@ -112,6 +113,21 @@ h1 {
   color: var(--color-1);
   font-size: 2.5rem;
 }
+
+/* ENGLISH  */
+
+.english {
+  margin: 50px;
+  border: solid 2.48px var(--color-1);
+  border-radius: 50%;
+  font-size: 0.9rem;
+  padding: 4px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
 
 /* NAVBAR HAMBURGER MENU _ Responsive - MOBILE */
 

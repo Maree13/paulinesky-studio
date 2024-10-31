@@ -29,7 +29,7 @@ const Navbar = () => {
           </Link>
           <br />
           <Link className="menu-link" id="menu-link-04" to="/contact">
-            Contact
+            Kontakt
           </Link>
         </div>
         <SocialMediaLinks />

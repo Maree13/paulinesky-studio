@@ -2,11 +2,15 @@ import { Link } from 'react-router-dom';
 
 const Error = () => {
   return (
-    <section>
-      <h2>404</h2>
-      <p>Stránka nenalezena</p>
+    <section className="error">
+      <h1 className="error-title">Promiňte!</h1>
       <p>
-        <Link to="/">Domovská stránka</Link>
+        <strong>Error 404.</strong> Stránku kterou hledáte jsme nenašli...
+      </p>
+      <p className="error-link-paragraph">
+        <Link className="error-link" to="/">
+          Mrkněte sem!
+        </Link>
       </p>
     </section>
   );

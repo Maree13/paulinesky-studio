@@ -7,16 +7,20 @@ import translationEN from './locales/en/translation.json';
 import translationCS from './locales/cs/translation.json';
 import navbarEN from './locales/en/navbar.json';
 import navbarCS from './locales/cs/navbar.json';
+import aboutmeEN from './locales/en/aboutme.json';
+import aboutmeCS from './locales/cs/aboutme.json';
 
 // Definujte dostupné jazyky a preklady
 const resources = {
   en: {
     translation: translationEN,
     navbar: navbarEN,
+    aboutme: aboutmeEN,
   },
   cs: {
     translation: translationCS,
     navbar: navbarCS,
+    aboutme: aboutmeCS,
   },
 };
 

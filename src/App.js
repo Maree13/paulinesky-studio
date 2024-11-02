@@ -6,20 +6,24 @@ import Contact from './pages/Contact';
 import Error from './pages/Error';
 import SharedLayout from './pages/SharedLayout';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import CookieConsentBanner from './components/CookieConsentBanner';
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route element={<SharedLayout />}>
-          <Route path="/" element={<Intro />} />
-          <Route path="/aboutme" element={<Aboutme />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<Error />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<SharedLayout />}>
+            <Route path="/" element={<Intro />} />
+            <Route path="/aboutme" element={<Aboutme />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<Error />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+      <CookieConsentBanner />
+    </>
   );
 };
 

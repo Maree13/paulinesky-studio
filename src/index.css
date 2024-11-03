@@ -627,3 +627,6 @@ h1 {
 /* COOKIES */
 
 /* 8. Štýly pre Cookie Consent */
+.accept-button {
+  background-color: #EAA29A;
+}

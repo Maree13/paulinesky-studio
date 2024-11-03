@@ -1,4 +1,4 @@
-import { FaFacebook, FaInstagram } from 'react-icons/fa'; // Uistite sa, že máte nainštalované react-icons
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
 
 const SocialMediaLinks = () => {
   return (

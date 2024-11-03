@@ -13,7 +13,7 @@ import contactCS from './locales/cs/contact.json';
 import contactEN from './locales/en/contact.json';
 import introCS from './locales/en/intro.json';
 import introEN from './locales/en/intro.json';
-import servicesCS from './locales/en/services.json';
+import servicesCS from './locales/cs/services.json';
 import servicesEN from './locales/en/services.json';
 
 // Definujte dostupné jazyky a preklady

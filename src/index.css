@@ -69,6 +69,12 @@ h1 {
   /* letter-spacing: 3px; */
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.9rem;
+  }
+}
+
 /* NAVBAR */
 
 /* NAVBAR HAMBURGER MENU _ BIG SCREENS */
@@ -273,6 +279,12 @@ h1 {
 }
 
 @media (max-width: 768px) {}
+
+/* ZAROVNANIE PARAGRAFOV VSETKYCH */
+
+.paragraph {
+  text-align: center;
+}
 
 
 /* ABOUT ME */
@@ -587,6 +599,11 @@ h1 {
   padding: 30px;
   width: 60%;
   flex-grow: 2;
+}
+
+.contact-webdesign {
+  font-size: 0.7rem;
+  margin-top: 70px;
 }
 
 /* .contact-title {

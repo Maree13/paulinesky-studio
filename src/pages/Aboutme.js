@@ -9,8 +9,8 @@ const Aboutme = () => {
     <section className="aboutme">
       <div className="aboutme-text">
         <h1>{t('title')}</h1>
-        <p>{t('paragraph1')}</p>
-        <p>{t('paragraph2')}</p>
+        <p className="paragraph aboutme-paragraph">{t('paragraph1')}</p>
+        <p className="paragraph aboutme-paragraph">{t('paragraph2')}</p>
         {/* <h1>- O mně -</h1>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis,

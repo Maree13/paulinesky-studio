@@ -1,22 +1,32 @@
 import ReservationButton from '../components/ReservationButton';
+import { useTranslation } from 'react-i18next';
+import React from 'react';
 
 const Contact = () => {
+  const { t } = useTranslation('contact'); // Inicializace překladu
+
   return (
     <section className="contact">
       <div className="contact-text">
-        <h1 className="contact-title">- Kontakt -</h1>
+        <h1 className="contact-title">{t('contactTitle')}</h1>
         <p className="address">
-          Mánesova 15 <br />
-          120 00 Praha <br />
+          {t('address')
+            .split('\n')
+            .map((line, index) => (
+              <React.Fragment key={index}>
+                {line}
+                <br />
+              </React.Fragment>
+            ))}
         </p>
 
         <p className="email">
-          <a href="mailto:studio.paulinesky@gmail.com">
-            studio.paulinesky@gmail.com
-          </a>
+          <a href="mailto:studio.paulinesky@gmail.com">{t('email')}</a>
         </p>
 
         <ReservationButton />
+
+        <p className="contact-webdesign">{t('contactWebdesign')}</p>
       </div>
 
       <div className="google-map">

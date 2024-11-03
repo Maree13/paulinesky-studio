@@ -9,6 +9,12 @@ import navbarEN from './locales/en/navbar.json';
 import navbarCS from './locales/cs/navbar.json';
 import aboutmeEN from './locales/en/aboutme.json';
 import aboutmeCS from './locales/cs/aboutme.json';
+import contactCS from './locales/cs/contact.json';
+import contactEN from './locales/en/contact.json';
+import introCS from './locales/en/intro.json';
+import introEN from './locales/en/intro.json';
+import servicesCS from './locales/en/services.json';
+import servicesEN from './locales/en/services.json';
 
 // Definujte dostupné jazyky a preklady
 const resources = {
@@ -16,11 +22,17 @@ const resources = {
     translation: translationEN,
     navbar: navbarEN,
     aboutme: aboutmeEN,
+    contact: contactEN,
+    intro: introEN,
+    services: servicesEN,
   },
   cs: {
     translation: translationCS,
     navbar: navbarCS,
     aboutme: aboutmeCS,
+    contact: contactCS,
+    intro: introCS,
+    services: servicesCS,
   },
 };
 

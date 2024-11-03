@@ -14,14 +14,14 @@ const CookieConsentBanner = () => {
         justifyContent: 'center',
         alignItems: 'center',
         background: '#2B373B',
-        color: '#ffffff',
+        color: '#F4F4F6',
         fontSize: '14px',
         padding: '20px 30px',
         textAlign: 'center',
       }}
       buttonStyle={{
-        backgroundColor: '#497C83',
-        color: '#fff',
+        backgroundColor: '#B4DAA9',
+        color: '#292929',
         padding: '10px 20px',
         borderRadius: '3px',
         border: 'none',
@@ -31,8 +31,8 @@ const CookieConsentBanner = () => {
         textTransform: 'uppercase',
       }}
       declineButtonStyle={{
-        backgroundColor: '#B6161C',
-        color: '#fff',
+        backgroundColor: '#F4F4F6',
+        color: '#292929',
         padding: '10px 20px',
         borderRadius: '3px',
         border: 'none',

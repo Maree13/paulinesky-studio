@@ -14,6 +14,7 @@ const CookieConsentBanner = () => {
         justifyContent: 'center',
         alignItems: 'center',
         background: '#2B373B',
+        opacity: '0.9',
         color: '#F4F4F6',
         fontSize: '14px',
         padding: '20px 30px',

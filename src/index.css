@@ -156,7 +156,7 @@ h1 {
 
   header {
     background-color: var(--background-header-1);
-    padding: 70px 30px;
+    padding: 10px 30px;
   }
 
   .hamburger {
@@ -192,6 +192,7 @@ h1 {
     align-items: center;
     /* width: 100%; */
     background-color: var(--background-header-1);
+    font-size: 1.2rem;
   }
 
   .social-media-links {
@@ -199,16 +200,14 @@ h1 {
     flex-direction: column-reverse;
     justify-content: space-evenly;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
     margin: 0;
     /* width: 100%; */
   }
 
-  .menu-link {
-    padding: 5px 10px;
-  }
+  .menu-link {}
 
-  .language-toggle {}
+  /* .language-toggle {} */
 
 }
 

@@ -28,6 +28,9 @@ body {
   /* pale dogwood */
   --background-6: #EBEBEB;
   /* pouzita na Contact */
+  /* --background-6-2: #BEDACE; */
+  --background-6-2: #C1D7CA;
+  /* Contact-link-hover mobilni verze */
   --background-7: #EAA29A;
   /* melon 2 */
   --background-8: #EFE7EF;
@@ -94,6 +97,12 @@ h1 {
   font-size: 1.3rem;
 }
 
+@media (max-width: 768px) {
+  .navbar-navigation {
+    padding: 15px;
+  }
+}
+
 .navbar-link-container {
   display: flex;
   justify-content: space-evenly;
@@ -156,7 +165,7 @@ h1 {
 
   header {
     background-color: var(--background-header-1);
-    padding: 10px 30px;
+    padding: 10px 15px;
   }
 
   .hamburger {
@@ -220,6 +229,36 @@ h1 {
   text-underline-offset: 6px;
 }
 
+@media (max-width: 768px) {
+
+  .menu-link:hover,
+  .menu-link:focus {
+    /* color: var(--color-4); */
+    text-decoration: none;
+    text-underline-offset: 6px;
+  }
+
+  #menu-link-01:focus,
+  #menu-link-01:hover {
+    color: var(--background-5);
+  }
+
+  #menu-link-02:focus,
+  #menu-link-02:hover {
+    color: var(--background-3);
+  }
+
+  #menu-link-03:focus,
+  #menu-link-03:hover {
+    color: var(--background-10);
+  }
+
+  #menu-link-04:focus,
+  #menu-link-04:hover {
+    color: var(--background-6-2);
+  }
+}
+
 /* FOOTER */
 
 .footer {
@@ -267,6 +306,7 @@ h1 {
     gap: 30px;
     text-align: center;
     height: 100%;
+    /* padding: 15px; */
   }
 
   /* .footer-links {
@@ -423,6 +463,13 @@ h1 {
   /* OTESTOVAT NA VELKYCH SCREENOCH */
   background-color: var(--background-1);
 }
+
+/* @media (max-width: 768px) {
+  .intro-text {
+    padding: 15px;
+  }
+} */
+
 
 .intro-text {
   display: flex;

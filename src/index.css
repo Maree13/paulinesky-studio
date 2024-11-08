@@ -29,7 +29,7 @@ body {
   --background-6: #EBEBEB;
   /* pouzita na Contact */
   /* --background-6-2: #BEDACE; */
-  --background-6-2: #C1D7CA;
+  --background-6-2: #CEDFD5;
   /* Contact-link-hover mobilni verze */
   --background-7: #EAA29A;
   /* melon 2 */
@@ -165,7 +165,7 @@ h1 {
 
   header {
     background-color: var(--background-header-1);
-    padding: 10px 15px;
+    padding: 10px;
   }
 
   .hamburger {

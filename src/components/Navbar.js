@@ -14,6 +14,11 @@ const Navbar = () => {
     i18n.changeLanguage(newLang);
   };
 
+  // Funkcia na zatvorenie menu po kliknutí na link
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <header>
       {/* Button that toggles between burger and cross icon */}
@@ -24,21 +29,41 @@ const Navbar = () => {
 
       <nav className={`navbar-navigation ${isOpen ? 'open' : ''}`}>
         <div className="navbar-link-container">
-          <Link className="menu-link" id="menu-link-01" to="/">
+          <Link
+            className="menu-link"
+            id="menu-link-01"
+            to="/"
+            onClick={closeMenu}
+          >
             {t('intro')}
           </Link>
           <br />
-          <Link className="menu-link" id="menu-link-02" to="/aboutme">
+          <Link
+            className="menu-link"
+            id="menu-link-02"
+            to="/aboutme"
+            onClick={closeMenu}
+          >
             {/* O mně */}
             {t('aboutMe')}
           </Link>
           <br />{' '}
-          <Link className="menu-link" id="menu-link-03" to="/services">
+          <Link
+            className="menu-link"
+            id="menu-link-03"
+            to="/services"
+            onClick={closeMenu}
+          >
             {/* Služby */}
             {t('services')}
           </Link>
           <br />
-          <Link className="menu-link" id="menu-link-04" to="/contact">
+          <Link
+            className="menu-link"
+            id="menu-link-04"
+            to="/contact"
+            onClick={closeMenu}
+          >
             {/* Kontakt */}
             {t('contact')}
           </Link>

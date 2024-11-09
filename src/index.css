@@ -238,7 +238,7 @@ h1 {
     text-underline-offset: 6px;
   }
 
-  #menu-link-01:focus,
+  /* #menu-link-01:focus,
   #menu-link-01:hover {
     color: var(--background-5);
   }
@@ -256,7 +256,7 @@ h1 {
   #menu-link-04:focus,
   #menu-link-04:hover {
     color: var(--background-6-2);
-  }
+  } */
 }
 
 /* FOOTER */

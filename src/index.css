@@ -50,6 +50,7 @@ body {
   /* snow */
   --background-header-2: #E7DADD;
   /* levander-blush */
+  --background-opacity: rgba(244, 244, 246, 0.8);
 
   /* COLORS FONT */
 
@@ -111,6 +112,13 @@ header {
   .navbar-navigation {
     padding: 15px;
   }
+
+  header {
+    position: sticky;
+    top: 0;
+    /* Pevné umiestnenie na vrch stránky */
+    z-index: 1000;
+  }
 }
 
 .navbar-link-container {
@@ -165,6 +173,7 @@ header {
 @media (max-width: 768px) {
   .language-toggle {
     margin: 0;
+    padding: 15px;
   }
 }
 
@@ -175,20 +184,22 @@ header {
 
   header {
     flex-direction: row;
-    background-color: var(--background-header-1);
+    /* background-color: var(--background-header-1); */
     padding: 10px;
   }
 
   .hamburger {
     display: flex;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    /* font-size: 40px; */
     z-index: 1;
     background: none;
     border: 0;
     color: var(--color-1);
     /* background-color: var(--background-2); */
   }
+
 
   .navbar-navigation {
     display: none;
@@ -197,13 +208,9 @@ header {
     width: 100%; */
     /* background-color: var(--background-header-1); */
     flex-direction: column;
-    /* Stack položek vertikálně když je menu otevřené */
     align-items: center;
-    /* Centruje odkazy */
     width: 100%;
-    /* Zabírá celou šířku */
     padding: 0;
-    /* Odstraní padding */
   }
 
   .navbar-navigation.open {
@@ -215,8 +222,10 @@ header {
     right: 0;
     /* flex-direction: column; */
     height: fit-content;
-    background-color: var(--background-header-1);
+    /* background-color: var(--background-header-1); */
+    background-color: var(--background-opacity);
     /* width: 100%; */
+    padding: 30px;
   }
 
   .navbar-link-container {
@@ -224,24 +233,22 @@ header {
     flex-direction: column;
     align-items: center;
     /* width: 100%; */
-    background-color: var(--background-header-1);
+    /* background-color: var(--background-header-1); */
+    /* background-color: red; */
     font-size: 1.2rem;
     padding-top: 30px;
   }
 
   .social-media-links {
-    display: flex;
+    display: none;
+    /* display: flex;
     flex-direction: column-reverse;
     justify-content: space-evenly;
     align-items: center;
     padding: 15px;
-    margin: 0;
+    margin: 0; */
     /* width: 100%; */
   }
-
-  .menu-link {}
-
-  /* .language-toggle {} */
 
 }
 
@@ -323,6 +330,12 @@ header {
   font-size: 0.7rem;
 }
 
+/* SOCIAL MEDIA LINKS FOOTER */
+
+.social-media-links-footer {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .footer {
     flex-direction: column-reverse;
@@ -332,6 +345,18 @@ header {
     text-align: center;
     height: 100%;
     /* padding: 15px; */
+  }
+
+  /* SOCIAL MEDIA LINKS FOOTER */
+
+  .social-media-links-footer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .social-media-icon-footer {
+    color: var(--color-3);
+    margin: 10px;
   }
 
   /* .footer-links {

@@ -1,3 +1,6 @@
+import SocialMediaLinksFooter from './SocialMediaLinksFooter';
+
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -7,6 +10,7 @@ const Footer = () => {
       <p className="copyright">
         © 2024 Studio Paulinesky - All rights reserved
       </p>
+      <SocialMediaLinksFooter />
     </footer>
   );
 };

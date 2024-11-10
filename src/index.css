@@ -50,7 +50,7 @@ body {
   /* snow */
   --background-header-2: #E7DADD;
   /* levander-blush */
-  --background-opacity: rgba(244, 244, 246, 0.8);
+  --background-opacity: rgba(244, 244, 246, 0.5);
 
   /* COLORS FONT */
 
@@ -223,7 +223,8 @@ header {
     /* flex-direction: column; */
     height: fit-content;
     /* background-color: var(--background-header-1); */
-    background-color: var(--background-opacity);
+    /* background-color: var(--background-opacity); */
+    background-color: transparent;
     /* width: 100%; */
     padding: 20px;
   }
@@ -232,12 +233,25 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* width: 100%; */
+    width: 100%;
     /* background-color: var(--background-header-1); */
-    /* background-color: red; */
     font-size: 1.3rem;
     padding-top: 3px;
     line-height: 1.6rem;
+    /* border: solid 2px red; */
+  }
+
+  .menu-link {
+    border: solid 2px var(--color-1);
+    border-radius: 3px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--background-header-1);
+  }
+
+  .menu-link:hover {
+    background-color: var(--background-opacity);
   }
 
   .social-media-links {

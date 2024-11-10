@@ -235,10 +235,12 @@ header {
     align-items: center;
     width: 100%;
     /* background-color: var(--background-header-1); */
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
     padding-top: 3px;
     line-height: 1.6rem;
     /* border: solid 2px red; */
+    font-size: 0.8rem;
+    letter-spacing: 2px;
   }
 
   .menu-link {

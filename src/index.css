@@ -247,11 +247,11 @@ header {
     width: 100%;
     padding: 10px;
     text-align: center;
-    background-color: var(--background-header-1);
+    background-color: var(--background-opacity);
   }
 
   .menu-link:hover {
-    background-color: var(--background-opacity);
+    background-color: var(--background-header-1);
   }
 
   .social-media-links {

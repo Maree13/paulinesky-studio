@@ -124,7 +124,7 @@ header {
 .navbar-link-container {
   display: flex;
   justify-content: space-evenly;
-  width: 60%;
+  width: 70%;
   /* flex-grow: 2; */
 }
 
@@ -225,7 +225,7 @@ header {
     /* background-color: var(--background-header-1); */
     background-color: var(--background-opacity);
     /* width: 100%; */
-    padding: 30px;
+    padding: 20px;
   }
 
   .navbar-link-container {
@@ -235,8 +235,9 @@ header {
     /* width: 100%; */
     /* background-color: var(--background-header-1); */
     /* background-color: red; */
-    font-size: 1.2rem;
-    padding-top: 30px;
+    font-size: 1.3rem;
+    padding-top: 3px;
+    line-height: 1.6rem;
   }
 
   .social-media-links {
@@ -341,7 +342,7 @@ header {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
     text-align: center;
     height: 100%;
     /* padding: 15px; */
@@ -352,6 +353,7 @@ header {
   .social-media-links-footer {
     display: flex;
     flex-direction: column-reverse;
+    gap: 40px;
   }
 
   .social-media-icon-footer {
@@ -495,6 +497,7 @@ header {
   .aboutme {
     flex-direction: column;
     height: 100%;
+    padding-top: 115px;
   }
 
   .slide {
@@ -563,6 +566,7 @@ header {
     height: 100%;
     width: 100%;
     gap: 100px;
+    padding-top: 115px;
   }
 
   .intro-text {
@@ -674,6 +678,7 @@ header {
     flex-direction: column;
     height: 100%;
     width: 100%;
+    padding-top: 115px;
   }
 
   .services-text {
@@ -758,6 +763,7 @@ header {
     flex-direction: column;
     height: 100%;
     width: 100%;
+    padding-top: 115px;
   }
 
   .contact-text {
@@ -810,6 +816,10 @@ header {
 }
 
 @media (max-width: 768px) {
+  .error {
+    padding-top: 80px;
+  }
+
   .error-link {
     padding: 20px 40px;
     font-size: 0.8rem;

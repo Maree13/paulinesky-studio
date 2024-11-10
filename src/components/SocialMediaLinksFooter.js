@@ -9,7 +9,7 @@ const SocialMediaLinksFooter = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaFacebook size={40} />
+        <FaFacebook size={30} />
       </a>
       <a
         className="social-media-icon-footer"
@@ -17,7 +17,7 @@ const SocialMediaLinksFooter = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaInstagram size={45} />
+        <FaInstagram size={35} />
       </a>
     </div>
   );

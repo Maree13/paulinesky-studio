@@ -27,6 +27,11 @@ const Navbar = () => {
         {/* Toggle icon based on isOpen state */}
       </button>
 
+      {/* Tlačidlo na prepínanie jazykov, umístěné vedle hamburger menu */}
+      <button className="language-toggle" onClick={toggleLanguage}>
+        {i18n.language === 'cs' ? t('english') : t('czech')}
+      </button>
+
       <nav className={`navbar-navigation ${isOpen ? 'open' : ''}`}>
         <div className="navbar-link-container">
           <Link
@@ -72,9 +77,9 @@ const Navbar = () => {
 
         {/* <div className="english">En</div> */}
         {/* Tlačidlo na prepínanie jazykov */}
-        <button className="language-toggle" onClick={toggleLanguage}>
+        {/* <button className="language-toggle" onClick={toggleLanguage}>
           {i18n.language === 'cs' ? t('english') : t('czech')}
-        </button>
+        </button> */}
         {/* <div className="english">{t('english')}</div> */}
       </nav>
     </header>

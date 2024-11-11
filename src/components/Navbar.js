@@ -19,6 +19,13 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // Môžete odstrániť 'smooth', ak chcete okamžité presunutie
+    });
+  };
+
   return (
     <header>
       {/* Button that toggles between burger and cross icon */}
@@ -38,7 +45,10 @@ const Navbar = () => {
             className="menu-link"
             id="menu-link-01"
             to="/"
-            onClick={closeMenu}
+            onClick={() => {
+              closeMenu();
+              scrollToTop();
+            }}
           >
             {t('intro')}
           </Link>
@@ -47,7 +57,10 @@ const Navbar = () => {
             className="menu-link"
             id="menu-link-02"
             to="/aboutme"
-            onClick={closeMenu}
+            onClick={() => {
+              closeMenu();
+              scrollToTop();
+            }}
           >
             {/* O mně */}
             {t('aboutMe')}
@@ -57,7 +70,10 @@ const Navbar = () => {
             className="menu-link"
             id="menu-link-03"
             to="/services"
-            onClick={closeMenu}
+            onClick={() => {
+              closeMenu();
+              scrollToTop();
+            }}
           >
             {/* Služby */}
             {t('services')}
@@ -67,7 +83,10 @@ const Navbar = () => {
             className="menu-link"
             id="menu-link-04"
             to="/contact"
-            onClick={closeMenu}
+            onClick={() => {
+              closeMenu();
+              scrollToTop();
+            }}
           >
             {/* Kontakt */}
             {t('contact')}

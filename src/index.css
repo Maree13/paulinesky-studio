@@ -217,15 +217,13 @@ header {
     display: flex;
     position: absolute;
     top: 50px;
-    /* Nastaví pozici pod header */
     left: 0;
     right: 0;
     /* flex-direction: column; */
     height: fit-content;
     /* background-color: var(--background-header-1); */
     /* background-color: var(--background-opacity); */
-    background-color: transparent;
-    /* width: 100%; */
+    width: 100%;
     padding: 20px;
   }
 
@@ -234,7 +232,7 @@ header {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    /* background-color: var(--background-header-1); */
+    background-color: var(--background-header-1);
     /* font-size: 1.3rem; */
     padding-top: 3px;
     line-height: 0.8rem;
@@ -244,17 +242,14 @@ header {
   }
 
   .menu-link {
-    border: solid 2px var(--color-1);
-    border-radius: 3px;
     width: 100%;
     padding: 10px;
     text-align: center;
-    background-color: var(--background-opacity);
   }
 
-  .menu-link:hover {
+  /* .menu-link:hover {
     background-color: var(--background-header-1);
-  }
+  } */
 
   .social-media-links {
     display: none;

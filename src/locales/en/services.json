@@ -1,3 +1,61 @@
 {
-  "servicesTitle": "- Services -"
+  "servicesTitle": "- Services -",
+  "categories": [
+    {
+      "category": "Cosmetic Care",
+      "services": [
+        { "name": "Relaxation", "price": "1690,-" },
+        { "name": "Basic", "price": "1490,-" },
+        { "name": "Acne Skin Care", "price": "1690,-" },
+        { "name": "Men's Cosmetics", "price": "1490,-" },
+        { "name": "Instrumental Cosmetics", "price": "1690,-" }
+      ]
+    },
+    {
+      "category": "Massages",
+      "services": [
+        {
+          "name": "Manual Face Lifting Including Facial Mask According to Skin Type",
+          "price": "1290,-"
+        },
+        {
+          "name": "Lymphatic Massage of the Face, Neck, and Décolleté",
+          "price": "990,-"
+        },
+        {
+          "name": "Relaxing Facial, Neck, and Décolleté Massage Including Final Mask According to Skin Type",
+          "price": "1290,-"
+        },
+        { "name": "Lymphatic Body Massage", "price": "1290,-" },
+        { "name": "Indian Head Massage", "price": "990,-" },
+        { "name": "Relaxing Hand Massage", "price": "990,-" },
+        {
+          "name": "Relaxing Massage of Back, Neck, and Hands",
+          "price": "1290,-"
+        },
+        {
+          "name": "Relaxing Massage of Legs, Buttocks, and Feet",
+          "price": "1290,-"
+        },
+        { "name": "Full Body Relaxing Massage", "price": "2190,-" },
+        { "name": "Peeling and Hydrating Cosmetic Care", "price": "150,-" }
+      ]
+    },
+    {
+      "category": "Depilation",
+      "services": [
+        { "name": "Arms", "price": "490,-" },
+        { "name": "Legs", "price": "690,-" },
+        { "name": "Back", "price": "490,-" },
+        { "name": "Bikini", "price": "290,-" },
+        { "name": "Underarms", "price": "290,-" }
+      ]
+    },
+    {
+      "category": "Other Services",
+      "services": [
+        { "name": "Eyelash and Eyebrow Dyeing Individually", "price": "490,-" }
+      ]
+    }
+  ]
 }

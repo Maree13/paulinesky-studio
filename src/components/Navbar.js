@@ -22,7 +22,7 @@ const Navbar = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth', // Môžete odstrániť 'smooth', ak chcete okamžité presunutie
+      behavior: 'smooth',
     });
   };
 

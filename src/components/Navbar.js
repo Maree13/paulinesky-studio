@@ -35,9 +35,7 @@ const Navbar = () => {
         {/* Toggle icon based on isOpen state */}
       </button>
 
-      <div className="logo-container">
-        <img className="logo" src={logo} alt="Logo" />
-      </div>
+      <img className="logo" src={logo} alt="Logo" />
 
       {/* Tlačidlo na prepínanie jazykov, umístěné vedle hamburger menu */}
       <button className="language-toggle" onClick={toggleLanguage}>

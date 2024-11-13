@@ -102,16 +102,15 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  /* padding: 30px; */
   background-color: var(--background-header-1);
-  height: 70px;
+  /* height: 70px; */
   font-size: 1.3rem;
+  border: solid 3px greenyellow;
 }
 
 @media (max-width: 768px) {
-  .navbar-navigation {
-    padding: 15px;
-  }
+
 
   header {
     position: sticky;
@@ -144,6 +143,7 @@ header {
   width: 40%;
   justify-content: space-evenly;
   /* flex-grow: 1; */
+  border: solid 3px yellow;
 }
 
 .social-media-icon {
@@ -159,7 +159,9 @@ header {
   justify-content: center;
   width: 30px;
   height: 30px;
-  margin: 50px;
+  /* margin: 50px; */
+  /* margin-left: 50px;
+  margin-right: 50px; */
   border: solid 2.48px var(--color-1);
   border-radius: 50%;
   font-size: 0.7rem;
@@ -181,7 +183,8 @@ header {
 
 /* NAVBAR HAMBURGER MENU _ Responsive - MOBILE */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px)  */
+@media (max-width: 1024px) {
 
   header {
     flex-direction: row;
@@ -947,10 +950,13 @@ header {
 }
 
 /* LOGO SA MUSI PREVIEST Z JPG NA SVG */
+
 .logo {
   width: 30px;
   height: 30px;
   border: solid 3px red;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 @media (max-width: 768px) {

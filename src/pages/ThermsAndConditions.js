@@ -1,11 +1,6 @@
 // import { useEffect } from 'react';
 
 const ThermsAndConditions = () => {
-  // useEffect(() => {
-  //   // Posunie okno na začiatok stránky pri načítaní komponenty
-  //   window.scrollTo({ top: 0, behavior: 'smooth' });
-  // });
-
   return (
     <section className="section-therms-and-conditions">
       {' '}

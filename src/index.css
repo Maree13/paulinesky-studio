@@ -736,14 +736,14 @@ header {
 }
 
 .services td:first-child {
-  width: 70%;
+  width: 90%;
   /* Adjust the width as needed to prevent the name from sticking to the price */
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
 
 .services td:last-child {
-  width: 30%;
+  width: 10%;
   /* Adjust as necessary to accommodate the price */
   padding-left: 10px;
   /* This creates a gap between the service name and the price */
@@ -752,12 +752,12 @@ header {
 }
 
 /* Additional styling for a more polished look */
-.services th {
+/* .services th {
   background-color: var(--background-header-1);
   border-radius: 10px;
-  color: #333;
+  color: var(--color-1);
   padding: 10px 15px;
-}
+} */
 
 .services tr:nth-child(even) {
   /* background-color: #f9f9f9; */
@@ -927,6 +927,8 @@ header {
   justify-content: center;
   align-items: center;
   background-color: var(--background-8);
+  padding: 30px;
+  text-align: center;
 }
 
 .footer-therms-and-conditions {

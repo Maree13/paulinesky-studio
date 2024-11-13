@@ -3,6 +3,7 @@ import { FaBars, FaTimes } from 'react-icons/fa'; // Importing icons
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 import SocialMediaLinks from './SocialMediaLinks';
+import logo from '../imglogo/cele_logo.jpg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // Initialize state
@@ -33,6 +34,10 @@ const Navbar = () => {
         {isOpen ? <FaTimes /> : <FaBars />}
         {/* Toggle icon based on isOpen state */}
       </button>
+
+      <div className="logo-container">
+        <img className="logo" src={logo} alt="Logo" />
+      </div>
 
       {/* Tlačidlo na prepínanie jazykov, umístěné vedle hamburger menu */}
       <button className="language-toggle" onClick={toggleLanguage}>
@@ -92,6 +97,7 @@ const Navbar = () => {
             {t('contact')}
           </Link>
         </div>
+
         <SocialMediaLinks />
 
         {/* <div className="english">En</div> */}
@@ -101,6 +107,10 @@ const Navbar = () => {
         </button> */}
         {/* <div className="english">{t('english')}</div> */}
       </nav>
+
+      {/* <div className="logo-container">
+        <img className="logo" src={logo} alt="Logo" />
+      </div> */}
     </header>
   );
 };

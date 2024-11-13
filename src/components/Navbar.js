@@ -42,6 +42,8 @@ const Navbar = () => {
         {i18n.language === 'cs' ? t('english') : t('czech')}
       </button>
 
+      <SocialMediaLinks />
+
       <nav className={`navbar-navigation ${isOpen ? 'open' : ''}`}>
         <div className="navbar-link-container">
           <Link
@@ -96,8 +98,6 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <SocialMediaLinks />
-
         {/* <div className="english">En</div> */}
         {/* Tlačidlo na prepínanie jazykov */}
         {/* <button className="language-toggle" onClick={toggleLanguage}>
@@ -105,6 +105,7 @@ const Navbar = () => {
         </button> */}
         {/* <div className="english">{t('english')}</div> */}
       </nav>
+      {/* <SocialMediaLinks /> */}
 
       {/* <div className="logo-container">
         <img className="logo" src={logo} alt="Logo" />

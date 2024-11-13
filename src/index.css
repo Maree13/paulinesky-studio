@@ -74,7 +74,7 @@ h1 {
   /* letter-spacing: 3px; */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   h1 {
     font-size: 1.9rem;
   }
@@ -109,7 +109,8 @@ header {
   border: solid 3px greenyellow;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 1024px) {
 
 
   header {
@@ -144,6 +145,7 @@ header {
   justify-content: space-evenly;
   /* flex-grow: 1; */
   border: solid 3px yellow;
+
 }
 
 .social-media-icon {
@@ -160,8 +162,8 @@ header {
   width: 30px;
   height: 30px;
   /* margin: 50px; */
-  /* margin-left: 50px;
-  margin-right: 50px; */
+  margin-left: 50px;
+  margin-right: 50px;
   border: solid 2.48px var(--color-1);
   border-radius: 50%;
   font-size: 0.7rem;
@@ -172,7 +174,7 @@ header {
   letter-spacing: 1px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .language-toggle {
     margin: 10px;
     padding: 15px;
@@ -183,14 +185,14 @@ header {
 
 /* NAVBAR HAMBURGER MENU _ Responsive - MOBILE */
 
-/* @media (max-width: 768px)  */
 @media (max-width: 1024px) {
+  /* @media (max-width: 1024px) { */
 
   header {
     flex-direction: row;
     /* background-color: var(--background-header-1); */
     padding: 10px;
-    border: 3px solid red;
+    /* border: 3px solid red; */
     align-items: center;
     justify-content: space-between;
   }
@@ -285,7 +287,7 @@ header {
   text-underline-offset: 6px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
   .menu-link:hover,
   .menu-link:focus {
@@ -360,7 +362,7 @@ header {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .footer {
     flex-direction: column-reverse;
     justify-content: center;
@@ -395,7 +397,7 @@ header {
   } */
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 1024px) {}
 
 /* ZAROVNANIE PARAGRAFOV VSETKYCH */
 
@@ -515,7 +517,7 @@ header {
 
 /* KONEC ANIMACE */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
   .aboutme {
     flex-direction: column;
@@ -582,7 +584,7 @@ header {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .intro {
     display: flex;
     flex-direction: column;
@@ -636,7 +638,7 @@ header {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .button-style {
     padding: 20px 40px;
     font-size: 0.8rem;
@@ -696,7 +698,7 @@ header {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .services {
     display: flex;
     flex-direction: column;
@@ -847,7 +849,7 @@ header {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .contact {
     display: flex;
     flex-direction: column;
@@ -905,7 +907,7 @@ header {
   margin: 70px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .error {
     padding-top: 80px;
   }
@@ -959,7 +961,7 @@ header {
   margin-right: 50px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .logo {
     /* order: 1; */
   }

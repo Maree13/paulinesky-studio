@@ -7,6 +7,7 @@ import Error from './pages/Error';
 import SharedLayout from './pages/SharedLayout';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import CookieConsentBanner from './components/CookieConsentBanner';
+import ThermsAndConditions from './pages/ThermsAndConditions';
 
 const App = () => {
   return (
@@ -19,6 +20,10 @@ const App = () => {
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<Error />} />
+            <Route
+              path="/therms-and-conditions"
+              element={<ThermsAndConditions />}
+            />
           </Route>
         </Routes>
       </BrowserRouter>

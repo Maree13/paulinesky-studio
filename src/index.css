@@ -917,3 +917,26 @@ header {
 .accept-button {
   background-color: #EAA29A;
 }
+
+/* THERMS AND CONDITIONS */
+
+.section-therms-and-conditions {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-8);
+}
+
+.footer-therms-and-conditions {
+  text-decoration: none;
+  font-size: 0.7rem;
+  color: var(--color-3);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.footer-therms-and-conditions:hover {
+  color: var(--color-4);
+}

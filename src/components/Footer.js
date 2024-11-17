@@ -20,7 +20,7 @@ const Footer = () => {
         to="/therms-and-conditions"
         onClick={handleTermsClick}
       >
-        Therms and Conditions
+        Obchodní podmínky
       </Link>
       <p className="copyright">
         © 2024 Studio Paulinesky - All rights reserved

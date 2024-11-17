@@ -11,6 +11,7 @@ const Aboutme = () => {
         <h1>{t('title')}</h1>
         <p className="paragraph aboutme-paragraph">{t('paragraph1')}</p>
         <p className="paragraph aboutme-paragraph">{t('paragraph2')}</p>
+        <p className="paragraph aboutme-paragraph">{t('paragraph3')}</p>
         {/* <h1>- O mně -</h1>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis,

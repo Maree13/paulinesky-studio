@@ -74,7 +74,7 @@ h1 {
   /* letter-spacing: 3px; */
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1110px) {
   h1 {
     font-size: 1.9rem;
   }
@@ -114,7 +114,7 @@ header {
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1110px) {
 
 
   header {
@@ -130,6 +130,8 @@ header {
   justify-content: space-evenly;
   width: 70%;
   /* flex-grow: 2; */
+  letter-spacing: 2px;
+  font-size: 1.1rem;
 }
 
 .menu-link {
@@ -178,7 +180,7 @@ header {
   letter-spacing: 1px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1110px) {
   .language-toggle {
     margin: 10px;
     padding: 15px;
@@ -189,7 +191,7 @@ header {
 
 /* NAVBAR HAMBURGER MENU _ Responsive - MOBILE */
 
-@media (max-width: 1024px) {
+@media (max-width: 1110px) {
   /* @media (max-width: 1024px) { */
 
   header {
@@ -291,7 +293,7 @@ header {
   text-underline-offset: 6px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1110px) {
 
   .menu-link:hover,
   .menu-link:focus {
@@ -366,7 +368,7 @@ header {
   display: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1110px) {
   .footer {
     flex-direction: column-reverse;
     justify-content: center;
@@ -401,7 +403,7 @@ header {
   } */
 }
 
-@media (max-width: 1024px) {}
+@media (max-width: 1110px) {}
 
 /* ZAROVNANIE PARAGRAFOV VSETKYCH */
 
@@ -521,7 +523,7 @@ header {
 
 /* KONEC ANIMACE */
 
-@media (max-width: 1024px) {
+@media (max-width: 1110px) {
 
   .aboutme {
     flex-direction: column;
@@ -588,7 +590,7 @@ header {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1110px) {
   .intro {
     display: flex;
     flex-direction: column;
@@ -642,7 +644,7 @@ header {
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1110px) {
   .button-style {
     padding: 20px 40px;
     font-size: 0.8rem;
@@ -702,7 +704,7 @@ header {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1110px) {
   .services {
     display: flex;
     flex-direction: column;
@@ -853,7 +855,7 @@ header {
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1110px) {
   .contact {
     display: flex;
     flex-direction: column;
@@ -911,7 +913,7 @@ header {
   margin: 70px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1110px) {
   .error {
     padding-top: 80px;
   }
@@ -973,7 +975,7 @@ header {
   top: 10px; */
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1110px) {
   .logo {
     /* order: 1; */
   }

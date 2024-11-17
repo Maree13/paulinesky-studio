@@ -11,7 +11,7 @@ import aboutmeEN from './locales/en/aboutme.json';
 import aboutmeCS from './locales/cs/aboutme.json';
 import contactCS from './locales/cs/contact.json';
 import contactEN from './locales/en/contact.json';
-import introCS from './locales/en/intro.json';
+import introCS from './locales/cs/intro.json';
 import introEN from './locales/en/intro.json';
 import servicesCS from './locales/cs/services.json';
 import servicesEN from './locales/en/services.json';
@@ -44,7 +44,7 @@ i18n
     lng: 'cs', // Počiatočný jazyk
     fallbackLng: 'en', // Jazyk, ktorý sa použije, ak preklad chýba
 
-    ns: ['translation', 'navbar'], // Definujte použité namespaces
+    ns: ['translation', 'navbar', 'aboutme', 'contact', 'intro', 'services'], // Definujte použité namespaces
     defaultNS: 'translation',
 
     keySeparator: false, // Používajte priamo kľúče pre preklady

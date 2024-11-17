@@ -3,7 +3,7 @@ import { FaBars, FaTimes } from 'react-icons/fa'; // Importing icons
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 import SocialMediaLinks from './SocialMediaLinks';
-import logo from '../imglogo/cele_logo.jpg';
+import logo from '../imglogo/logo_test.svg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // Initialize state

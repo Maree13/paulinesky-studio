@@ -26,7 +26,7 @@ const Contact = () => {
 
         <ReservationButton />
 
-        <p className="contact-webdesign">{t('contactWebdesign')}</p>
+        {/* <p className="contact-webdesign">{t('contactWebdesign')}</p> */}
       </div>
 
       <div className="google-map">

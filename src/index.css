@@ -676,7 +676,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  /* align-items: center; */
   width: 60%;
   padding: 80px;
   flex-grow: 2;
@@ -715,6 +714,7 @@ header {
     height: 100%;
     width: 100%;
     padding-top: 115px;
+    /* border: solid 7px blue; */
   }
 
   .services-text {
@@ -793,6 +793,24 @@ header {
   /* Centers the button and maintains margin */
 }
 
+
+@media (max-width: 1110px) {
+  .services td {
+    padding: 8px;
+  }
+
+  .services td:first-child,
+  .services td:last-child {
+    padding: 8px;
+  }
+
+  .services-text {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .services td:first-child {}
+}
 
 /* CONTACT */
 

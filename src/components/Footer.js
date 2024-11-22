@@ -13,7 +13,8 @@ const Footer = () => {
   return (
     <footer className="footer">
       <p className="web-design">
-        Designed with <i className="fa-solid fa-heart"></i> by mari!{' '}
+        {/* Designed with <i className="fa-solid fa-heart"></i> by mari!{' '} */}
+        Web design: Mariana Sarovic
       </p>
       <Link
         className="footer-therms-and-conditions"

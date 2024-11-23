@@ -8,22 +8,36 @@ import SharedLayout from './pages/SharedLayout';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import CookieConsentBanner from './components/CookieConsentBanner';
 import ThermsAndConditions from './pages/ThermsAndConditions';
+import { routes } from './routes';
+import { useTranslation } from 'react-i18next';
+import React, { useEffect, useState } from 'react';
 
 const App = () => {
+  const { i18n } = useTranslation();
+  const [languageChanged, setLanguageChanged] = useState(false);
+
+  useEffect(() => {
+    // Update state to trigger re-render when language changes
+    setLanguageChanged((prev) => !prev);
+  }, [i18n.language]);
+
+  const currentLanguage = i18n.language || 'en';
+  const currentRoutes = routes[currentLanguage];
+
   return (
     <>
       <BrowserRouter>
-        <Routes>
+        <Routes key={languageChanged}>
           <Route element={<SharedLayout />}>
-            <Route path="/" element={<Intro />} />
-            <Route path="/aboutme" element={<Aboutme />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<Error />} />
+            <Route path={currentRoutes.home} element={<Intro />} />
+            <Route path={currentRoutes.about} element={<Aboutme />} />
+            <Route path={currentRoutes.services} element={<Services />} />
+            <Route path={currentRoutes.contact} element={<Contact />} />
             <Route
-              path="/therms-and-conditions"
+              path={currentRoutes.therms}
               element={<ThermsAndConditions />}
             />
+            <Route path="*" element={<Error />} />
           </Route>
         </Routes>
       </BrowserRouter>

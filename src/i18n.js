@@ -41,10 +41,18 @@ i18n
   .use(initReactI18next) // Prepojenie s Reactom
   .init({
     resources,
-    lng: 'cs', // Počiatočný jazyk
+    // lng: 'cs',  Počiatočný jazyk
     fallbackLng: 'en', // Jazyk, ktorý sa použije, ak preklad chýba
 
-    ns: ['translation', 'navbar', 'aboutme', 'contact', 'intro', 'services'], // Definujte použité namespaces
+    ns: [
+      'translation',
+      'navbar',
+      'aboutme',
+      'contact',
+      'intro',
+      'services',
+      'routes',
+    ], // Definujte použité namespaces
     defaultNS: 'translation',
 
     keySeparator: false, // Používajte priamo kľúče pre preklady

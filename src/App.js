@@ -8,6 +8,7 @@ import SharedLayout from './pages/SharedLayout';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import CookieConsentBanner from './components/CookieConsentBanner';
 import ThermsAndConditions from './pages/ThermsAndConditions';
+import './i18n';
 
 const App = () => {
   return (

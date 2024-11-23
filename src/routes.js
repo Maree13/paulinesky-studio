@@ -1,4 +1,5 @@
 // routes.js
+
 // export const routes = {
 //   en: {
 //     home: '/',
@@ -16,7 +17,7 @@
 //   },
 // };
 
-// src/routes.js
+src / routes.js;
 import { useTranslation } from 'react-i18next';
 
 export const useRoutesConfig = () => {

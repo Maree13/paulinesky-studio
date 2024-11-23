@@ -21,8 +21,8 @@ const LocalizedRoutes = () => {
         <Route path={routes.services} element={<Services />} />
         <Route path={routes.contact} element={<Contact />} />
         <Route
-          path={routes.termsAndConditions}
-          element={<TermsAndConditions />}
+          path={routes.thermsAndConditions}
+          element={<ThermsAndConditions />}
         />
         <Route path={routes.error} element={<ErrorPage />} />
         {/* Catch-all route */}

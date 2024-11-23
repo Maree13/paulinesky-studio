@@ -1,45 +1,169 @@
-import { Link } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa'; // Importing icons
+// src/components/Navbar.js
+// import React, { useState } from 'react';
+// import { Link, useNavigate, useLocation } from 'react-router-dom';
+// import { FaBars, FaTimes } from 'react-icons/fa';
+// import { useTranslation } from 'react-i18next';
+// import SocialMediaLinks from './SocialMediaLinks';
+// import logo from '../imglogo/logo2.svg';
+// import { useRoutesConfig } from '../routes';
+
+// const Navbar = () => {
+//   const [isOpen, setIsOpen] = useState(false);
+//   const { t, i18n } = useTranslation('navbar');
+//   const navigate = useNavigate();
+//   const location = useLocation();
+//   const routes = useRoutesConfig();
+
+//   const currentLanguage = i18n.language || 'en';
+//   const nextLanguage = currentLanguage === 'cs' ? 'en' : 'cs';
+
+//   const changeLanguage = () => {
+//     const currentPath = location.pathname;
+//     const routeKey = Object.keys(routes).find(
+//       (key) => routes[key] === currentPath,
+//     );
+//     const newPath = routeKey
+//       ? i18n.getFixedT(nextLanguage, 'routes')(routeKey)
+//       : routes.home;
+
+//     i18n.changeLanguage(nextLanguage).then(() => {
+//       navigate(newPath, { replace: true });
+//     });
+//   };
+
+//   const closeMenu = () => setIsOpen(false);
+//   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+
+//   return (
+//     <header>
+//       <button className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+//         {isOpen ? <FaTimes /> : <FaBars />}
+//       </button>
+
+//       <img className="logo" src={logo} alt="Logo" />
+
+//       <button className="language-toggle" onClick={changeLanguage}>
+//         {currentLanguage === 'cs' ? 'En' : 'Cs'}
+//       </button>
+
+//       <SocialMediaLinks />
+
+//       <nav className={`navbar-navigation ${isOpen ? 'open' : ''}`}>
+//         <div className="navbar-link-container">
+//           <Link
+//             className="menu-link"
+//             to={routes.home}
+//             onClick={() => {
+//               closeMenu();
+//               scrollToTop();
+//             }}
+//           >
+//             {t('intro')}
+//           </Link>
+//           <br />
+//           <Link
+//             className="menu-link"
+//             to={routes.aboutMe}
+//             onClick={() => {
+//               closeMenu();
+//               scrollToTop();
+//             }}
+//           >
+//             {t('aboutMe')}
+//           </Link>
+//           <br />
+//           <Link
+//             className="menu-link"
+//             to={routes.services}
+//             onClick={() => {
+//               closeMenu();
+//               scrollToTop();
+//             }}
+//           >
+//             {t('services')}
+//           </Link>
+//           <br />
+//           <Link
+//             className="menu-link"
+//             to={routes.contact}
+//             onClick={() => {
+//               closeMenu();
+//               scrollToTop();
+//             }}
+//           >
+//             {t('contact')}
+//           </Link>
+//         </div>
+//       </nav>
+//     </header>
+//   );
+// };
+
+// export default Navbar;
+
+// src/components/Navbar.js
+import React, { useState } from 'react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
-import { useState } from 'react';
 import SocialMediaLinks from './SocialMediaLinks';
 import logo from '../imglogo/logo2.svg';
+import { useRoutesConfig } from '../useRoutesConfig';
+import { routesConfig } from '../routesConfig'; // Import routesConfig
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false); // Initialize state
-  const { t, i18n } = useTranslation('navbar'); // Použitie 'navbar' namespace
+  const [isOpen, setIsOpen] = useState(false);
+  const { t, i18n } = useTranslation('navbar'); // Používajte len 'navbar' namespace
+  const navigate = useNavigate();
+  const location = useLocation();
+  const routes = useRoutesConfig();
 
-  // Funkcia na prepínanie jazykov
-  const toggleLanguage = () => {
-    const newLang = i18n.language === 'cs' ? 'en' : 'cs';
-    i18n.changeLanguage(newLang);
+  const currentLanguage = i18n.language || 'en';
+  const nextLanguage = currentLanguage === 'cs' ? 'en' : 'cs';
+
+  const changeLanguage = () => {
+    const currentPath = location.pathname;
+    console.log('Current Path:', currentPath);
+
+    // Nájdeme routeKey pre aktuálnu cestu
+    const routeKey = Object.keys(routesConfig).find(
+      (key) => routesConfig[key][currentLanguage] === currentPath,
+    );
+    console.log('Route Key:', routeKey);
+
+    if (routeKey) {
+      // Získame novú cestu pre nový jazyk
+      const newPath = routesConfig[routeKey][nextLanguage];
+      console.log('New Path:', newPath);
+
+      // Zmeníme jazyk a navigujeme na novú cestu
+      i18n.changeLanguage(nextLanguage).then(() => {
+        console.log(`Language changed to: ${nextLanguage}`);
+        navigate(newPath, { replace: true });
+      });
+    } else {
+      // Ak route key nie je nájdený, navigujeme na home
+      console.log('Route Key not found, navigating to home.');
+      i18n.changeLanguage(nextLanguage).then(() => {
+        console.log(`Language changed to: ${nextLanguage}`);
+        navigate(routes.home, { replace: true });
+      });
+    }
   };
 
-  // Funkcia na zatvorenie menu po kliknutí na link
-  const closeMenu = () => {
-    setIsOpen(false);
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  };
+  const closeMenu = () => setIsOpen(false);
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
   return (
     <header>
-      {/* Button that toggles between burger and cross icon */}
       <button className="hamburger" onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? <FaTimes /> : <FaBars />}
-        {/* Toggle icon based on isOpen state */}
       </button>
 
       <img className="logo" src={logo} alt="Logo" />
 
-      {/* Tlačidlo na prepínanie jazykov, umístěné vedle hamburger menu */}
-      <button className="language-toggle" onClick={toggleLanguage}>
-        {i18n.language === 'cs' ? t('english') : t('czech')}
+      <button className="language-toggle" onClick={changeLanguage}>
+        {currentLanguage === 'cs' ? 'En' : 'Cs'}
       </button>
 
       <SocialMediaLinks />
@@ -48,8 +172,7 @@ const Navbar = () => {
         <div className="navbar-link-container">
           <Link
             className="menu-link"
-            id="menu-link-01"
-            to="/"
+            to={routes.home}
             onClick={() => {
               closeMenu();
               scrollToTop();
@@ -60,56 +183,38 @@ const Navbar = () => {
           <br />
           <Link
             className="menu-link"
-            id="menu-link-02"
-            to="/aboutme"
+            to={routes.aboutMe}
             onClick={() => {
               closeMenu();
               scrollToTop();
             }}
           >
-            {/* O mně */}
             {t('aboutMe')}
           </Link>
-          <br />{' '}
+          <br />
           <Link
             className="menu-link"
-            id="menu-link-03"
-            to="/services"
+            to={routes.services}
             onClick={() => {
               closeMenu();
               scrollToTop();
             }}
           >
-            {/* Služby */}
             {t('services')}
           </Link>
           <br />
           <Link
             className="menu-link"
-            id="menu-link-04"
-            to="/contact"
+            to={routes.contact}
             onClick={() => {
               closeMenu();
               scrollToTop();
             }}
           >
-            {/* Kontakt */}
             {t('contact')}
           </Link>
         </div>
-
-        {/* <div className="english">En</div> */}
-        {/* Tlačidlo na prepínanie jazykov */}
-        {/* <button className="language-toggle" onClick={toggleLanguage}>
-          {i18n.language === 'cs' ? t('english') : t('czech')}
-        </button> */}
-        {/* <div className="english">{t('english')}</div> */}
       </nav>
-      {/* <SocialMediaLinks /> */}
-
-      {/* <div className="logo-container">
-        <img className="logo" src={logo} alt="Logo" />
-      </div> */}
     </header>
   );
 };

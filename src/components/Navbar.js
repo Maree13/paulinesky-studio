@@ -4,32 +4,10 @@ import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 import SocialMediaLinks from './SocialMediaLinks';
 import logo from '../imglogo/logo2.svg';
-import { routes } from '../routes';
-import { useNavigate, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // Initialize state
   const { t, i18n } = useTranslation('navbar'); // Použitie 'navbar' namespace
-
-  const navigate = useNavigate();
-  const location = useLocation();
-  const currentLanguage = i18n.language || 'en';
-  const nextLanguage = currentLanguage === 'cs' ? 'en' : 'cs';
-  const currentRoutes = routes[currentLanguage];
-  const nextRoutes = routes[nextLanguage];
-
-  // Change Language Function
-  const changeLanguage = () => {
-    const currentPath = location.pathname;
-    const routeKey = Object.keys(currentRoutes).find(
-      (key) => currentRoutes[key] === currentPath,
-    );
-    const newPath = routeKey ? nextRoutes[routeKey] : nextRoutes.home;
-
-    i18n.changeLanguage(nextLanguage).then(() => {
-      navigate(newPath);
-    });
-  };
 
   // Funkcia na prepínanie jazykov
   const toggleLanguage = () => {
@@ -60,8 +38,8 @@ const Navbar = () => {
       <img className="logo" src={logo} alt="Logo" />
 
       {/* Tlačidlo na prepínanie jazykov, umístěné vedle hamburger menu */}
-      <button className="language-toggle" onClick={changeLanguage}>
-        {currentLanguage === 'cs' ? 'En' : 'Cs'}
+      <button className="language-toggle" onClick={toggleLanguage}>
+        {i18n.language === 'cs' ? t('english') : t('czech')}
       </button>
 
       <SocialMediaLinks />

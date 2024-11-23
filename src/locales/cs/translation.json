@@ -1,5 +1,11 @@
 {
   "welcome": "Vítejte",
   "footerText": "Všechna práva vyhrazena.",
-  "reserve": "Rezervace"
+  "reserve": "Rezervace",
+  "intro": "Úvod",
+  "aboutMe": "O mně",
+  "services": "Služby",
+  "contact": "Kontakt",
+  "thermsAndConditions": "Podmínky",
+  "error": "Stránka Nenalezena"
 }

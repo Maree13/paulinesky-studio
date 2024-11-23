@@ -1,5 +1,11 @@
 {
   "welcome": "Welcome",
   "footerText": "All rights reserved.",
-  "reserve": "Book"
+  "reserve": "Book",
+  "intro": "Introduction",
+  "aboutMe": "About Me",
+  "services": "Services",
+  "contact": "Contact",
+  "thermsAndConditions": "Therms and Conditions",
+  "error": "Page Not Found"
 }
